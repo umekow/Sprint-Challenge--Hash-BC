@@ -30,9 +30,7 @@ def proof_of_work(last_proof):
     proof_string = f"{last_proof}".encode()
     proof_hash = hashlib.sha256(proof_string).hexdigest()
 
-
-   
-    while valid_proof(proof_hash, proof) is False: 
+    while valid_proof(proof_hash, proof) is False:
         proof += 10000
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
@@ -53,8 +51,6 @@ def valid_proof(last_hash, proof):
     guess_hash = hashlib.sha256(guess).hexdigest()
 
     return hash_proof == guess_hash[:5]
-
-
 
 
 if __name__ == '__main__':
