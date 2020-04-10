@@ -1,15 +1,11 @@
 import hashlib
-import requests
-
 import json
-
+import random
 import sys
-
+from timeit import default_timer as timer
 from uuid import uuid4
 
-from timeit import default_timer as timer
-
-import random
+import requests
 
 
 def proof_of_work(last_proof):
