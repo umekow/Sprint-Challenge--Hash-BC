@@ -48,6 +48,7 @@ def valid_proof(last_hash, proof):
     IE:  last_hash: ...AE912345, new hash 12345E88...
     """
     # TODO: Your code here!
+    #last 
     hash_proof = last_hash[-5:]
     guess = f"{proof}".encode()
     guess_hash = hashlib.sha256(guess).hexdigest()
