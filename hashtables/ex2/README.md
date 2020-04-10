@@ -27,6 +27,8 @@ tickets = [
 ]
 ```
 
+
+
 Your function should output an array of strings with the entire route of your trip. For the above example, it should look like this:
 ```
 ["LAX", "SFO", "BHM", "FLG", "XNA", "CID", "SLC", "PIT", "ORD"]

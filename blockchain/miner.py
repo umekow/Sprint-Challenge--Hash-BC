@@ -33,8 +33,7 @@ def proof_of_work(last_proof):
 
    
     while valid_proof(proof_hash, proof) is False: 
-        proof += 10000
-
+        proof += 90
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
